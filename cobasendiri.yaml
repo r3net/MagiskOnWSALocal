@@ -1,27 +1,33 @@
 proxies:
-  - name: FAST
-    server: quiz.vidio.com
-    port: 443
-    type: trojan
-    password: 44c76770-fda2-11ee-9db7-1239d0255272
+  - name: operator
+    server: quiz.int.vidio.com
+    port: 80
+    type: vmess
+    uuid: 126c20c5-fb2b-4b06-bac8-e0df2cb6e41e
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: sg-4.test3.net
+    servername: v1p.tbvpnstore.my.id
     network: ws
     ws-opts:
-      path: /howdy
-      headers:
-        Host: sg-4.test3.net
+      path: /v2ray
+    headers:
+    Host: v1p.tbvpnstore.my.id
     udp: true
-  - name: AKUN2
-    server: quiz.vidio.com
-    port: 443
-    type: trojan
-    password: 44c76770-fda2-11ee-9db7-1239d0255272
+  - name: operator2
+    server: 104.22.5.240
+    port: 80
+    type: vmess
+    uuid: 126c20c5-fb2b-4b06-bac8-e0df2cb6e41e
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: sg-4.test3.net
+    servername: v1p.tbvpnstore.my.id
     network: ws
     ws-opts:
-      path: /howdy
-      headers:
-        Host: sg-4.test3.net
+      path: /v2ray
+    headers:
+    Host: v1p.tbvpnstore.my.id
     udp: true
